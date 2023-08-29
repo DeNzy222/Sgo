@@ -1,3 +1,5 @@
-@media (max-width: 1000px), (max-width: 452px) {
-	
+@media (max-width: 1000px), (max-width: 452px), (max-width: 630px) {
+	.main_bl_hd {
+		padding-left: 4px;
+	}
 }
