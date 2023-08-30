@@ -5,8 +5,12 @@
 html,
 body {
   scroll-behavior: smooth;
-  color: #2c4053;
-  background: #e8edf2;
+  background: rgb(232, 237, 240);
+  background: linear-gradient(
+    125deg,
+    rgba(232, 237, 240, 0.28327305043110995) 53%,
+    rgba(44, 64, 80, 0.26086408684567575) 53%
+  );
   font-family: sans-serif;
 }
 
@@ -113,7 +117,7 @@ body {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #d3dde5;
-  padding: 12px 0;
+  padding: 12px 0px;
   cursor: pointer;
 }
 /* .select_org:hover {
@@ -238,7 +242,7 @@ body {
   position: absolute;
   left: 90%;
   vertical-align: middle;
-  top: 30px;
+  top: 33px;
   cursor: pointer;
 }
 .syst_sgn_scope {
@@ -250,6 +254,7 @@ body {
 .checkboxe_gb {
   position: relative;
   margin-right: 10px;
+  top: 1px;
 }
 .outline_check {
   display: none;
@@ -259,16 +264,16 @@ body {
 .syst_sgn_scope:active .outline_check {
   display: block;
 }
-.agreed_us {
-  display: none;
+.agreed_us.active {
+  display: block;
   position: absolute;
   bottom: 0;
 }
 .forg_password > a {
-  position: relative;
-  left: 130%;
+  margin-left: 180px;
   text-decoration: none;
-  color: #2c4053;
+  color: #2885b8;
+  font-size: 13px;
 }
 .bth_ToSign_Up {
   margin-top: 26px;
@@ -288,4 +293,74 @@ body {
 .bth_ToSign_Up > a:hover {
   background-color: #5d89c7;
   transition: 0.2 ease-in-out;
+}
+.back {
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 73%;
+  right: 67%;
+  box-shadow: 0 6px 8px rgba(9, 35, 72, 0.2);
+  cursor: pointer;
+}
+.back > img {
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+  position: absolute;
+}
+.role_sign {
+  background-color: #fff;
+  padding: 40px 32px;
+  border-radius: 16px;
+  width: 376px;
+  height: 235px;
+  position: relative;
+  left: 34%;
+  top: 171px;
+  box-shadow: 0 24px 48px rgba(9, 35, 72, 0.2);
+}
+.sign-name-scope > h2 {
+  text-align: center;
+  color: #2c4053;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sign_as {
+  background-color: #3063ad;
+  padding: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 4px;
+  position: relative;
+}
+.sign_as:hover {
+  background-color: #4a7ac2;
+  transition: 0.5s ease;
+}
+.sign_as > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.backToMain {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: -24px;
+  top: 32px;
+  background: #fff;
+  box-shadow: 0 6px 8px rgba(9, 35, 72, 0.2);
+  border-radius: 4px;
+}
+.backToMain > a > img {
+  position: absolute;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
 }
